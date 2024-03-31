@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Head from 'next/head';
 
 import classes from './page.module.css';
 import ImageSlideshow from './components/images/image-slideshow';
@@ -6,6 +7,9 @@ import ImageSlideshow from './components/images/image-slideshow';
 export default function Home() {
   return (
     <>
+    <Head>
+        <link rel="preload" href="./page.module.css" as="styleSheet" />
+      </Head>
       <header className={classes.header}>
         <div className={classes.slideshow}>
           <ImageSlideshow />

@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
+import Head from 'next/head';
+
 
 import burgerImg from '@/assets/burger.jpg';
 import curryImg from '@/assets/curry.jpg';
@@ -36,6 +38,10 @@ export default function ImageSlideshow() {
   }, []);
 
   return (
+    <>
+    <Head>
+      <link rel="preload" href="./image-slideshow.module.css" as="styleSheet" />
+    </Head>
     <div className={classes.slideshow}>
       {images.map((image, index) => (
         <Image
@@ -46,5 +52,6 @@ export default function ImageSlideshow() {
         />
       ))}
     </div>
+    </>
   );
 }
