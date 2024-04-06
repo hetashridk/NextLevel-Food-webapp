@@ -34,8 +34,8 @@
   }
 
   .slideshow {
-    width: 40%; /* Adjusted width */
+    width: 90%; /* Adjusted width */
     max-width: 50rem; /* Limit max-width */
-    height: 25rem;
+    height: 19rem;
   }
 }
