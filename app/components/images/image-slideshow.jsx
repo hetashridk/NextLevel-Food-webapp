@@ -47,8 +47,13 @@ export default function ImageSlideshow() {
         <Image
           key={index}
           src={image.image}
+          blurDataURL={image.image}
+
           className={index === currentImageIndex ? classes.active : ''}
           alt={image.alt}
+
+          loading="lazy"
+  
         />
       ))}
     </div>

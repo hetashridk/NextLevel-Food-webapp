@@ -1,15 +1,24 @@
+
+
 import Link from 'next/link';
-import Head from 'next/head';
+// import Head from 'next/head';
+import dynamic from 'next/dynamic';
 
 import classes from './page.module.css';
 import ImageSlideshow from './components/images/image-slideshow';
 
+// const DynamicComponentWithNoSSR = dynamic(() => import('./page.module.css'), {
+//   loading: () => <p>Loading...</p>,
+//   ssr: false,
+// });
+
 export default function Home() {
   return (
     <>
-    <Head>
+    {/* <Head>
         <link rel="preload" href="./page.module.css" as="styleSheet" />
-      </Head>
+      </Head> */}
+      {/* <DynamicComponentWithNoSSR /> */}
       <header className={classes.header}>
         <div className={classes.slideshow}>
           <ImageSlideshow />
