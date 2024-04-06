@@ -65,6 +65,23 @@
       padding: 2rem 10%;
     }
   }
+
+  @media (max-width: 445px) {
+    .nav ul{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: medium;
+    }
+  }
+
+  /* @media (max-width: 415px) {
+    .nav ul{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  } */
   
   @media (max-width: 768px) {
     .header {

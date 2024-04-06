@@ -23,7 +23,8 @@ function MainHeader() {
         <nav className={classes.nav}>
             <ul>
                 <li>
-                    <NavLink href="/meals">Browse Meals</NavLink>
+                    <NavLink href="/meals">Browse 
+                    Meals</NavLink>
                 </li>
                 <li>
                     <NavLink href='/community'>Browse Community</NavLink> {/* here we have used path === '/community' as we don't have nested page/path in community */}
